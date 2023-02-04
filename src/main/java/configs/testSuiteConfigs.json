@@ -1,0 +1,33 @@
+{
+  "name": "Selenium Hybrid Framework",
+  "description": "This suite is to run test suite & test cases in multiple browser",
+  "implicitWaitTimeout": 10000,
+  "explicitWaitTimeout": 10000,
+  "ignoreCertificateError": true,
+  "browsers": ["safari"],
+  "screenSize": "1920,1080",
+  "suitesDir": "src/main/resources/suites",
+  "suites": [
+    {
+      "directory": "src/main/resources/suites/regression",
+      "ignoreTestCases": [],
+      "skip": false
+    }
+  ],
+  "excelIndexes": {
+    "tsSheetName": "TS",
+    "tsIdColumnIndex": 0,
+    "tsNameColumnIndex": 1,
+    "tsResultColumnIndex": 2,
+    "tsCommentColumnIndex": 3,
+    "tsSkipColumnIndex": 4,
+    "tcSheetNamePrefix": "TC-",
+    "tcKeywordColumnIndex": 2,
+    "tcSelectorTypeColumnIndex": 3,
+    "tcSelectorValueColumnIndex": 4,
+    "tcTestDataColumnIndex": 5,
+    "tcResultColumnIndex": 6,
+    "tcCommentColumnIndex": 7,
+    "tcSkipIndex": 8
+  }
+}
